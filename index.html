@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/sponsorship.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Спонсоры</title>
+</head>
+<body>
+    <main>
+        <h1>Ремонт техники различных брендов</h1>
+        <div class="blur"></div>
+            <section class="slider_container" id="div_mobile">
+                
+                <div class ="swiper_container" id="swiper_container">
+                    <div class="swiper logo_slider">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/acer.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                       
+                            
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/apple.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                       
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/bosch.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                        
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/hp.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                     
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/Lenovo.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                      
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/samsung.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                       
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo sony" src="assets/img/sony.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                      
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/Viewsonic.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                        
+                           
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/acer.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                           
+                        
+                     
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/apple.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                        
+                            
+                                <div class="sponsor swiper-slide"> <div class="space-between_sponsor"><img class="logo" src="assets/img/bosch.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div></div>
+                            
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="swiper-pagination"></div>
+            <div class="all-sponsors" id="div_hidden">
+                <div class="sponsor"> <img class="logo" src="assets/img/acer.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/apple.svg" alt="samsung"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/bosch.svg" alt="apple"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/hp.svg" alt="bosch"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/Lenovo.svg" alt="hp"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/samsung.svg" alt="acer"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/Viewsonic.svg" alt="Viewsonic"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo sony" src="assets/img/sony.svg" alt="sony"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/acer.svg" alt="samsung"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor"> <img class="logo" src="assets/img/apple.svg" alt="apple"> <img class="go-point" src="assets/img/go.svg" alt="go-point"></div>
+                <div class="sponsor" ><img class="logo" src="assets/img/bosch.svg" alt="Lenovo"> <img class="go-point" src="assets/img/go.svg" alt="go-point">  </div>
+            </div>
+        <div class="show_all-div" id="show_all">
+        <img class="pointer_down" src="assets/img/pointer_down.svg" alt="" id="pointer_down"><input class="show_all" onclick="hide();change();" type="button" value="Показать все" id="myButton1"></input></div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            function change() {
+                var pointer = document.getElementById("pointer_down");
+                var elem = document.getElementById("myButton1");
+                if (elem.value=="Показать все") {
+                    pointer.style.transform = "rotate(180deg)";
+                     elem.value = "Скрыть";
+                } else {
+                    pointer.style.transform = "rotate(0deg)";
+                    elem.value = "Показать все";
+                }
+
+            };
+            function hide() {
+                
+                var x = document.getElementById("div_hidden");
+                if (x.style.overflowY === "visible") {
+                    x.style.maxHeight = "171px";
+                    x.style.gridAutoRows = "0";
+                    x.style.overflowY = "hidden";
+                } else {
+                    
+                    x.style.overflowY = "visible";
+                    x.style.maxHeight = "none";
+                    x.style.gridAutoRows = "auto";
+                }
+            }
+        </script>
+        <script>
+            var show_all = document.getElementById("show_all");
+            var mobile_hide = document.getElementById("div_mobile");
+            var swiper_container = document.getElementById("swiper_container");
+            if (screen.width > 767) {
+                swiper_container.style.overflow = "hidden";
+            };
+            if (screen.width <= 767) {
+            
+            var x = document.getElementById("div_hidden");
+            var swiper = new Swiper(".logo_slider", {
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              slidesPerView:'auto',
+              spaceBetween:16,
+              slidesOffsetBefore:16,
+              slidesOffsetAfter:16,
+            });
+            x.style.display = "none";
+            show_all.style.display = "none";
+        } else {
+            mobile_hide.style.display = "none";
+            
+        };
+
+          </script>
+    </main>
+</body>
+</html>
